@@ -1,6 +1,6 @@
-﻿namespace Evaluation_Manager_G10
+﻿namespace Evaluation_Manager
 {
-    partial class frmLogin
+    partial class FrmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,73 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblKorisnickoime = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            this.lblLozinka = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblKorisnickoime
+            // label1
             // 
-            this.lblKorisnickoime.AutoSize = true;
-            this.lblKorisnickoime.Location = new System.Drawing.Point(55, 72);
-            this.lblKorisnickoime.Name = "lblKorisnickoime";
-            this.lblKorisnickoime.Size = new System.Drawing.Size(78, 13);
-            this.lblKorisnickoime.TabIndex = 0;
-            this.lblKorisnickoime.Text = "Korisničko ime:";
-            this.lblKorisnickoime.Click += new System.EventHandler(this.label1_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Korisničko ime:";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(139, 69);
+            this.txtUsername.Location = new System.Drawing.Point(101, 12);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(176, 20);
+            this.txtUsername.Size = new System.Drawing.Size(98, 20);
             this.txtUsername.TabIndex = 1;
-            // 
-            // lblLozinka
-            // 
-            this.lblLozinka.AutoSize = true;
-            this.lblLozinka.Location = new System.Drawing.Point(55, 115);
-            this.lblLozinka.Name = "lblLozinka";
-            this.lblLozinka.Size = new System.Drawing.Size(47, 13);
-            this.lblLozinka.TabIndex = 2;
-            this.lblLozinka.Text = "Lozinka:";
-            this.lblLozinka.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(139, 115);
+            this.txtPassword.Location = new System.Drawing.Point(101, 35);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(176, 20);
+            this.txtPassword.Size = new System.Drawing.Size(98, 20);
             this.txtPassword.TabIndex = 3;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 37);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Lozinka:";
+            // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(240, 166);
+            this.btnLogin.Location = new System.Drawing.Point(135, 65);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.Size = new System.Drawing.Size(64, 28);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Prijava";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // frmLogin
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 215);
+            this.ClientSize = new System.Drawing.Size(218, 110);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.lblLozinka);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.lblKorisnickoime);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmLogin";
+            this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Prijava";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,11 +107,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblKorisnickoime;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.Label lblLozinka;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLogin;
     }
 }
-
