@@ -16,6 +16,7 @@ namespace Evaluation_Manager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //DBLayer.DB.SetConfiguration("Evaluationmanager, ekapitan20", "pasword")
             Application.Run(new FrmLogin());
         }
     }
